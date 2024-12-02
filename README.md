@@ -1,7 +1,8 @@
 
 ## 取得
-git clone 
-
+```
+git clone https://github.com/mitsuruishihara/k8s-test.git
+```
 
 ## kindの取得、clusterの作成
 
