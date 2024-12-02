@@ -1,0 +1,17 @@
+env:
+  name: production
+replicaCount: 3
+namespace: app
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30081
+pdb:
+  enabled: true
+  minAvailable: 3
+hpa:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 6
+  cpuUtilization: 50

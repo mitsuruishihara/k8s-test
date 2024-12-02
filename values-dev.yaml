@@ -1,0 +1,13 @@
+env:
+  name: development
+replicaCount: 1
+namespace: app
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30080
+pdb:
+  enabled: false
+hpa:
+  enabled: false
